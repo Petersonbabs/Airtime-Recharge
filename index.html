@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Card</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <!-- MODAL -->
+    
+        <div class="modal">
+            <section class="modal-con">
+                <h1 id="modal-text">
+                </h1>
+                <button class="btn okay-btn">Ok</button>
+            </section>
+        </div>
+    
+    <!-- END OF MODAL -->
+
+    <!-- HEADER -->
+    <header>
+        <h1>Recharge Card </h1>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- RECHARGE CARD -->
+    <section class="recharge">
+        <!-- reacharge container -->
+        <section class="recharge-con">
+            <!-- recharge left(generate pin) -->
+            <section class="recharge-left generate-pin">
+
+                    <!-- select network -->
+                    <div>
+                        <label for="select-network">Choose Network</label>
+                        <select name="select-network" id="select-network">
+                            <option value="select-network">Select Network</option>
+                            <option value="mtn">Mtn</option>
+                            <option value="airtel">Airtel</option>
+                            <option value="glo">Glo</option>
+                            <option value="9mobile">9mobile</option>
+                        </select>
+                    </div>
+                    <!-- end of select amount -->
+
+                    <!-- select amount -->
+                    <div>
+                        <label for="select-amount">Select Amount</label>
+                        <select name="select-amount" id="select-amount">
+                            <option value="select-amount">Select Amount</option>
+                            <option value="1000">1000</option>
+                            <option value="500">500</option>
+                            <option value="200">200</option>
+                            <option value="100">100</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                    <!-- end of select amount -->
+
+                    <!-- generated pin -->
+                    <div>
+                        <label for="generate-pin">Generate Pin</label>
+                        <div class="pinn">
+                            <input type="text" name="generated-pin" id="generated-pin" placeholder="Generated pin" disabled>
+                            <span class="inner" id="copy-btn">
+                                <span>copy</span>
+                                <img src="./images/copy-solid.svg" alt=""  class="inner-btn">
+                                
+                            </span>
+                        </div>
+                        <span id="copied-el">copied to clipboard!</span>
+                    </div>
+                    <!-- end of generated pin -->
+
+                    <!-- pin buttons -->
+                    <div>
+                        <input type="button" value="Generate" id="generate-btn" class="btn">
+                    </div>
+                    <!-- end of pin buttons -->
+
+            </section>
+            <!-- end of recharge left(generate pin) -->
+
+
+            <!-- RECHARGE RIGHT (recharge pin)-->
+            <section class="recharge-right">
+                <label for="insert-pin">Insert Pin Below</label>
+                <div class="pinn">
+                    
+                    <input type="text" id="insert-pin" placeholder="pin">
+
+                    <span class="inner" id="paste-btn">
+                        <span>paste</span>
+                         <img src="./images/paste-regular.svg" alt=""  class="inner-btn">
+                    </span>
+                    
+                </div>
+                <input type="button" value="Recharge Card" id="recharge-btn" class="btn">
+            </section>
+            <!-- END OF RECHARGE RIGHT (recharge pin) -->
+            
+        </section>
+        <!-- end of recharge container -->
+    </section>
+    <!-- END OF RECHARGE CARD -->
+
+    <!-- HISTORY -->
+    <section class="history">
+        <!-- history container -->
+        <section class="history-con">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Network</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Pin</th>
+                        <th>PrintRef</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>9</td>
+                        <td>9mobile</td>
+                        <td>09/08/2023</td>
+                        <td>1000</td>
+                        <td>9999999999994</td>
+                        <td>*126*734732013847#</td>
+                        <td>unused</td>
+                        <td>Delete</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>9mobile</td>
+                        <td>09/08/2023</td>
+                        <td>1000</td>
+                        <td>9999999999994</td>
+                        <td>*126*734732013847#</td>
+                        <td>unused</td>
+                        <td>Delete</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>9mobile</td>
+                        <td>09/08/2023</td>
+                        <td>1000</td>
+                        <td>9999999999994</td>
+                        <td>*126*734732013847#</td>
+                        <td>unused</td>
+                        <td>Delete</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- end of history container -->
+    </section>
+    <!-- END OF HISTORY -->
+
+
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+</html>
